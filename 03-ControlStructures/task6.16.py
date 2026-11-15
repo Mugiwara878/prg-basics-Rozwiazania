@@ -1,4 +1,4 @@
-time_24 = input('Enter time (24-hour formatcz): ')
+time_24 = input('Enter time (24-hour format): ')
 hour = int(time_24[0:2])
 minute = time_24[3:5]
 

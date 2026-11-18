@@ -1,0 +1,14 @@
+###
+# Sets the main diagonal of a square matrix to 1
+#
+matrix = [
+    [0,0,0],
+    [0,0,0],
+    [0,0,0]
+]
+
+for i in range(len(matrix)):
+    matrix[i][i] = 1
+
+for row in matrix:
+    print(row)

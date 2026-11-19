@@ -1,9 +1,7 @@
 import queue
 
-# create a visited_websites
 visited_websites = queue.LifoQueue()
 
-# some previously visited websites
 visited_websites.put('instagram.com')
 visited_websites.put('uek.krakow.pl')
 visited_websites.put('microsoft.com')
@@ -16,10 +14,9 @@ while True:
          break
       else:
          print('<-- Going back to a previously visited website')
-         website = ...
-   elif ... != "":
-      ...
+         website = visited_websites.get()    # zdejmuje poprzednio odwiedzoną stronę
+   elif website != "":
+      visited_websites.put(website)           # dodaje nowo wpisaną stronę na stos
 
-   # print name of website you are currently viewing
    print('You are currently viewing:', website)
    print()
